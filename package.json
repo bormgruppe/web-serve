@@ -1,0 +1,34 @@
+{
+  "name": "webserve",
+  "version": "0.1.0",
+  "description": "Simple way to run a web server and open the browser at a specific location",
+  "main": "webserve.js",
+  "scripts": {
+    "test": "jasmine-node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bormgruppe/web-serve.git"
+  },
+  "keywords": [
+    "webserver",
+    "browser"
+  ],
+  "author": "bormgruppe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bormgruppe/web-serve/issues"
+  },
+  "homepage": "https://github.com/bormgruppe/web-serve",
+  "dependencies": {
+    "connect": "^3.4.0",
+    "open": "0.0.5",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "jasmine-node": "^1.14.5",
+    "mocha": "^2.3.3",
+    "rewire": "^2.3.4"
+  }
+}
