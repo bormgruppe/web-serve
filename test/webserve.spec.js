@@ -39,7 +39,7 @@ describe('serveAndOpen', function() {
 
     it('should listen on port 8000 by default', function() {
         webserve.serveAndOpen();
-        expect(app.listen.mostRecentCall.args[0]).toEqual(8000);
+        expect(app.listen).toHaveBeenCalledWith(8000, jasmine.any(Function));
     });
 
     it('should listen on specified port if specified', function() {
@@ -47,7 +47,7 @@ describe('serveAndOpen', function() {
         webserve.serveAndOpen({
             port: testPort
         });
-        expect(app.listen.mostRecentCall.args[0]).toEqual(testPort);
+        expect(app.listen).toHaveBeenCalledWith(testPort, jasmine.any(Function));
     });
 
     it('should open index.html by default', function() {
