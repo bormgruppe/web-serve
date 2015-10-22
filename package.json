@@ -1,5 +1,5 @@
 {
-  "name": "webserve",
+  "name": "web-serve",
   "version": "0.1.0",
   "description": "Simple way to run a web server and open the browser at a specific location",
   "main": "webserve.js",
